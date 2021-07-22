@@ -31,6 +31,10 @@ body {
     justify-content: center;
 }
 
+.profile-container {
+    line-height: 0px; line-height: 0rem;
+}
+
 .container > *:not(:last-child) {
     display: block;
     margin-right: 20px; margin-right: 2rem;
