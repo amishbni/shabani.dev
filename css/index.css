@@ -4,7 +4,7 @@
 
 html, body {
     height: 100%;
-    font-family: "Caveat";
+    font-family: "Lato";
 }
 
 body {
@@ -55,3 +55,9 @@ body {
     font-family: "Caveat";
     src: url(../assets/fonts/Caveat/Caveat-Regular.ttf) format("truetype");
 }
+
+@font-face {
+    font-family: "Lato";
+    src: url(../assets/fonts/Lato/Lato-Regular.ttf) format("truetype");
+}
+
