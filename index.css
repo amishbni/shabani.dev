@@ -15,6 +15,10 @@ body {
   padding: 0px; padding: 0rem;
 }
 
+hr {
+  color: white;
+}
+
 .noselect {
   -webkit-touch-callout: none;
   -webkit-user-select: none;
