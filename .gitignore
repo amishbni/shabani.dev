@@ -1,9 +1,14 @@
 # virtual environment directory
 /venv
 
+<<<<<<< HEAD
 # environment variables
 **/.env
 
 # pycache directories
 __pycache__/
 
+=======
+# pycache directory
+__pycache__/
+>>>>>>> ea79559 (Ignore pycache directories)
