@@ -2,7 +2,7 @@
 /venv
 
 # environment variables
-**/.env
+**/*.env
 
 # pycache directories
 __pycache__/
