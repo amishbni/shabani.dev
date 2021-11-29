@@ -1,4 +1,4 @@
-"""amirashabani URL Configuration
+"""shabani URL Configuration
 
 The `urlpatterns` list routes URLs to views. For more information please see:
     https://docs.djangoproject.com/en/3.2/topics/http/urls/
@@ -21,3 +21,4 @@ urlpatterns = [
     path('', home_view),
     path('admin/', admin.site.urls),
 ]
+
