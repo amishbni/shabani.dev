@@ -1,0 +1,32 @@
+version: "3.8"
+
+services:
+  web:
+    build: .
+    command: bash -c "
+      python manage.py makemigrations &&
+      python manage.py migrate &&
+      gunicorn
+        --certfile=/etc/nginx/certs/cert.pem
+        --keyfile=/etc/nginx/certs/key.pem
+        shabani.wsgi:application
+        --bind 0.0.0.0:443"
+    container_name: shabani
+    env_file:
+      - ./config/web/variables.env
+    volumes:
+      - ./src:/src
+      - /etc/nginx/certs:/etc/nginx/certs
+    expose:
+      - "443"
+  nginx:
+    image: nginx:1.21-alpine
+    container_name: ng
+    ports:
+      - "443:443"
+      - "80:80"
+    volumes:
+      - ./config/nginx:/etc/nginx
+    depends_on:
+      - web
+
