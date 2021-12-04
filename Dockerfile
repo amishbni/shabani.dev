@@ -1,14 +1,12 @@
-from python:3.9-slim
+FROM python:3.9.7-alpine
 
-env PYTHONBUFFERED 1
+RUN pip install pip --upgrade
+COPY ./requirements.txt .
+RUN pip install -r requirements.txt
 
-copy requirements.txt requirements.txt
-run pip install\
- --trusted-host pypi.org\
- --trusted-host files.pythonhosted.org\
- -r requirements.txt
+COPY ./src /app
+WORKDIR /app
 
-run mkdir /src
-add ./src /src
-workdir /src
+COPY ./entrypoint.sh /
+ENTRYPOINT ["sh", "/entrypoint.sh"]
 
