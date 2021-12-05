@@ -10,3 +10,6 @@ __pycache__/
 # sqlite file
 **/**.sqlite3
 
+# SSL certificates
+*.pem
+
