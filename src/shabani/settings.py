@@ -40,7 +40,6 @@ ADMIN_ENABLED = DEBUG
 # Application definition
 
 INSTALLED_APPS = [
-    'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
     'django.contrib.sessions',
@@ -48,6 +47,9 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'pages',
 ]
+
+if ADMIN_ENABLED:
+    INSTALLED_APPS.append('django.contrib.admin')
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
