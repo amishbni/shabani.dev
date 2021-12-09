@@ -23,3 +23,13 @@ div.container > * {
   margin: 0px; margin: 0rem;
   padding: 0px; padding: 0rem;
 }
+
+#name {
+  font-size: 20px; font-size: 2rem;
+  padding-top: 8px; padding-top: 0.8rem;
+}
+
+#job-title {
+  font-size: 8px; font-size: 0.8rem;
+  padding-top: 6px; padding-top: 0.6rem;
+}
