@@ -16,3 +16,8 @@ body {
   align-items: center;
   justify-content: center;
 }
+
+div.container > * {
+  margin: 0px; margin: 0rem;
+  padding: 0px; padding: 0rem;
+}
