@@ -19,7 +19,7 @@ body {
   line-height: 1;
 }
 
-div.container > * {
+div.container > img, h1, h6 {
   margin: 0px; margin: 0rem;
   padding: 0px; padding: 0rem;
 }
@@ -32,4 +32,13 @@ div.container > * {
 #job-title {
   font-size: 8px; font-size: 0.8rem;
   padding-top: 6px; padding-top: 0.6rem;
+}
+
+.links {
+  padding-top: 20px; padding-top: 2rem;
+}
+
+.icons {
+  width: 20px; width: 2rem;
+  height: 20px; height: 2rem;
 }
