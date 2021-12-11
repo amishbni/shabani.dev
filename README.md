@@ -10,3 +10,5 @@
 
 **Icons for links:** [Color](https://icons8.com/icons/color)
 
+**Favicon:** [Becris Lineal](https://icons8.com/icon/Vcpc90uYdQQV/next)
+
