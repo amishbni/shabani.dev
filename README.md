@@ -8,3 +8,5 @@
 
 **Web Server Gateway Interface:** [GUnicorn](https://gunicorn.org)
 
+**Icons for links:** [Color](https://icons8.com/icons/color)
+
