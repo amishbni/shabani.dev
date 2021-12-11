@@ -1,4 +1,4 @@
-## Technologies used:
+## Technologies used and credits:
 
 **Web framework:** [Django](https://www.djangoproject.com)
 
