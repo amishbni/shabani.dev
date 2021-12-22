@@ -7,4 +7,12 @@
     <link rel="shortcut icon" type="image/x-icon" href="{% static 'images/lastfm_favicon.ico' %}">
     <link rel="stylesheet" href="{% static 'css/statsfm.css' %}?{% now 'U' %}">
   </head>
+  <body>
+    <div class="container">
+      <form method="GET">
+        <input id="username" type="text" name="username" value="Your last.fm username (for example, amirashabani)">
+        <input type="submit" value="Enter">
+      </form>
+    </div>
+  </body>
 </head>
