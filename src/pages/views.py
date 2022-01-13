@@ -7,8 +7,15 @@ def home_view(request, *args, **kwargs):
 def statsfm_view(request, *args, **kwargs):
     if request.method == "GET":
         form = UsernameForm(request.GET)
+        if form.is_valid():
+            username = form.cleaned_data["username"]
     else:
         form = UsernameForm()
 
-    return render(request, "statsfm.html", {'form': form})
+    context = {
+        "form": form,
+        "username": username,
+    }
+
+    return render(request, "statsfm.html", context)
 
