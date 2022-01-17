@@ -2,16 +2,18 @@
 {% load static %}
 
 {% block content %}
-<div class="container noselect">
-  <img ondragstart="return false;" id="profile-picture" width="200px" height="200px" src="{% static 'images/profile.gif' %}">
-  <h1 id="name">Amir Shabani</h1>
-  <h6 id="job-title">Backend & DevOps Developer</h6>
-  <div class="links">
-    <a href="https://github.com/amirashabani"><img class="icons" src="{% static 'images/github.png' %}"></a>
-    <a href="mailto:amir@shabani.dev"><img class="icons" src="{% static 'images/email.png' %}"></a>
-    <a href="https://stackoverflow.com/users/6282576/amir-shabani"><img class="icons" src="{% static 'images/stackoverflow.png' %}"></a>
-    <a href="https://stackexchange.com/users/8365851/amir-a-shabani"><img class="icons" src="{% static 'images/stackexchange.png' %}"></a>
-    <a href="https://www.last.fm/user/amirashabani"><img class="icons" src="{% static 'images/lastfm.png' %}"></a>
+<body style="background-color: black; color: white;">
+  <div class="container noselect">
+    <img ondragstart="return false;" id="profile-picture" width="200px" height="200px" src="{% static 'images/profile.gif' %}">
+    <h1 id="name">Amir Shabani</h1>
+    <h6 id="job-title">Backend & DevOps Developer</h6>
+    <div class="links">
+      <a href="https://github.com/amirashabani"><img class="icons" src="{% static 'images/github.png' %}"></a>
+      <a href="mailto:amir@shabani.dev"><img class="icons" src="{% static 'images/email.png' %}"></a>
+      <a href="https://stackoverflow.com/users/6282576/amir-shabani"><img class="icons" src="{% static 'images/stackoverflow.png' %}"></a>
+      <a href="https://stackexchange.com/users/8365851/amir-a-shabani"><img class="icons" src="{% static 'images/stackexchange.png' %}"></a>
+      <a href="https://www.last.fm/user/amirashabani"><img class="icons" src="{% static 'images/lastfm.png' %}"></a>
+    </div>
   </div>
-</div>
+</body>
 {% endblock content %}

@@ -2,12 +2,14 @@
 {% load crispy_forms_tags %}
 
 {% block content %}
-{% if request.path == "/login" %}
-<div class="container">
-  <form method="POST" action=""> {% csrf_token %}
-    {{ form | crispy }}
-    <input type="submit" value="login" class="btn btn-success">
-  </form>
-</div>
-{% endif %}
+<body class="bg-dark text-light">
+  {% if request.path == "/login" %}
+  <div class="container">
+    <form method="POST" action=""> {% csrf_token %}
+      {{ form | crispy }}
+      <input type="submit" value="login" class="btn btn-success">
+    </form>
+  </div>
+  {% endif %}
+</body>
 {% endblock content %}
