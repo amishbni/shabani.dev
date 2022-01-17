@@ -6,6 +6,8 @@ from pages import views
 urlpatterns = [
     path("", views.home_view),
     path("statsfm", views.statsfm_view),
+    path("demo", views.demo_view, name="demo"),
+    path("login", views.login_view, name="login"),
 ]
 
 if settings.ADMIN_ENABLED:
