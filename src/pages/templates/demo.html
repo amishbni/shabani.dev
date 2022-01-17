@@ -5,8 +5,7 @@
   {% if request.user.is_authenticated %}
   <h2>Hey, {{ request.user }}!</h2>
   {% else %}
-  <h2>You haven't logged in, you can't be here!</h2>
-  <h2><a href="{% url 'login' %}">login</a></h2>
+  <h2>You can't be here! You have to <a href="{% url 'login' %}">login</a> first.</h2>
   {% endif %}
 </div>
 {% endblock content %}
