@@ -8,6 +8,7 @@ urlpatterns = [
     path("statsfm", views.statsfm_view),
     path("demo", views.demo_view, name="demo"),
     path("login", views.login_view, name="login"),
+    path("logout", views.logout_view, name="logout"),
 ]
 
 if settings.ADMIN_ENABLED:

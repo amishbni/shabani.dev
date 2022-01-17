@@ -3,7 +3,7 @@
 {% block content %}
 <div class="container">
   {% if request.user.is_authenticated %}
-  <h2>Hey, {{ request.user }}!</h2>
+  <h2>Hey, {{ request.user }}! Wanna <a href="{% url 'logout' %}">logout</a>?</h2>
   {% else %}
   <h2>You can't be here! You have to <a href="{% url 'login' %}">login</a> first.</h2>
   {% endif %}
