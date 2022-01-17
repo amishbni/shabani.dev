@@ -19,10 +19,10 @@ from django.conf import settings
 from pages.views import home_view, statsfm_view
 
 urlpatterns = [
-    path('', home_view),
-    path('statsfm', statsfm_view),
+    path("", home_view),
+    path("statsfm", statsfm_view),
 ]
 
 if settings.ADMIN_ENABLED:
-    urlpatterns.append(path('admin/', admin.site.urls))
+    urlpatterns.append(path("admin/", admin.site.urls))
 
