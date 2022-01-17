@@ -26,7 +26,10 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'pages',
+    'crispy_forms',
 ]
+
+CRISPY_TEMPLATE_PACK = "bootstrap4"
 
 if ADMIN_ENABLED:
     INSTALLED_APPS.append('django.contrib.admin')
